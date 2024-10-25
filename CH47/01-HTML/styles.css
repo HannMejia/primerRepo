@@ -1,0 +1,66 @@
+/*Los selectores aparecen en naranja claro*/
+/*1er selector: por elemento > nombreElemento {} adentro de las llaves van las reglas css*/
+body {
+    h1 {
+        color: blueviolet;
+    }
+    h2 {
+        color: aqua;
+    }
+}
+/*2do selector: seleccionar por clase > .nombreDeLaClase {} (para este es necesario crear clases con <div class= "nombreClase">*/
+.titular3 {
+    h2 {
+        color:brown;
+    }
+}
+
+.caja {
+    width: 200px; /*ancho de la caja*/
+    height: 100px; /*altura de la caja*/
+    padding: 20px; /*espacio entre el contenido y el borde*/
+    border: 5px solid blue; /*linea que rodea el padding*/
+    margin: 10px; /*espacio entre el borde y otros elementos fuera de la caja*/
+    background-color: lightgray; /*color de fondo de la caja*/
+}
+
+.caja {
+    display: block; /*display: block > hace visible un elemento */
+}
+
+.tabla {
+    display: none; /*display: none > hace invisible un elemento*/
+}
+
+.estatica {
+    position: static;
+}
+
+.relativa {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.absoluta {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.fija {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: lightblue;
+}
+
+.pegajosa {
+    position: sticky;
+    top: 0;
+    background-color: yellow; 
+}
+
+/*3er selector: por ID*/
+/*Utilizamos el selector "clase" para clasificar las "cajas"*/
+

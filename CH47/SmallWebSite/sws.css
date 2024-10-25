@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Simplifica';
+    src: url('fuente/simplifica_typeface.ttf') format ('truetype');
+}
+body {
+    background-color: rosybrown;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.encabezado {
+    font-family: 'Simplifica';
+    font-size: larger;
+    text-align: center;
+}
+.caja {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.imgproducto {
+    border: 5px solid purple;
+    flex: 1;
+    padding: 0;
+}
+.productodes {
+    flex: 2;
+    width: 400px;
+    height: 100px;
+    padding: 10px; 
+    border: 5px solid purple; 
+    margin: 10px; 
+    background-color: violet;
+    align-items: center;
+    justify-content: center;
+}
+.precio {
+    color: red;
+}
+.compra {
+    margin-top: 20px;
+}
