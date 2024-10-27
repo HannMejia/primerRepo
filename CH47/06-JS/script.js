@@ -30,9 +30,19 @@ let signo = prompt("¿Cuál es tu signo?");
 let resultado = nombre + ", tu signo es " + signo;
 alert ("Eres " + resultado);*/
 
+/*
 alert ("Bienvenido al juego del amor <3. Da click para comenzar")
 let nombre = prompt("¿Cuál es tu nombre?");
 let amade = prompt("Ingresa el nombre de tu amad@");
 let tiempoJuntos = prompt("¿Cuántos meses llevan juntos?");
 let tiempoTotalDias = tiempoJuntos * 30
 alert (nombre + ", llevas " + tiempoTotalDias + " días junto a tu amad@ <3");
+*/
+
+console.log ("Hola, mundo");
+console.warn ("Adevertencia");
+console.error ("Ups")
+
+let participantes = ["Irving", "Abigail", "Arez", "Hannia"];
+console.log (participantes);
+console.table (participantes);
