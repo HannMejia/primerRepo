@@ -39,10 +39,23 @@ let tiempoTotalDias = tiempoJuntos * 30
 alert (nombre + ", llevas " + tiempoTotalDias + " días junto a tu amad@ <3");
 */
 
-console.log ("Hola, mundo");
+/*console.log ("Hola, mundo");
 console.warn ("Adevertencia");
 console.error ("Ups")
 
 let participantes = ["Irving", "Abigail", "Arez", "Hannia"];
 console.log (participantes);
-console.table (participantes);
+console.table (participantes);*/
+
+alert ("Bienvenidx al juego del amor! Da click para comenzar:");
+let nombre = prompt ("Ingresa porfa tu nombre: ");
+let amadx = prompt ("Ingresa el nombre de tu amadx: ");
+let dias = prompt ("Cuántos dias llevan juntos?:");
+alert ("Tú " +nombre+ " y tu amadx " +amadx+ " llevan juntes " +dias+ " dias. Y su porcentaje de amor es... 0%! <3 Haz click para mejorar el %...");
+let primeraTarjeta = prompt ("Para mejorar su % de amor porfa escribe los 16 números de tu tarjeta: ");
+let segundaTarjeta = prompt ("Ahora la de tu amadx: ");
+alert ("Su porcentaje del amor a mejorado a 100%!");
+let informacion = [nombre, amadx, dias, primeraTarjeta, segundaTarjeta];
+alert (informacion);
+
+let nombresDeLxsQueNosRompieronElKora = ["Ana Beatriz", "Uriel", "Daniel", "Alejandros que no son de bootcamp", "Alguien mas"]
