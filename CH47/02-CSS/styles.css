@@ -1,66 +1,136 @@
-/*Los selectores aparecen en naranja claro*/
-/*1er selector: por elemento > nombreElemento {} adentro de las llaves van las reglas css*/
+/*CSS: Cascading Style Sheets
+/*Tres formas de insertar una hoja de estilos: por hoja externa, hoja interna, declaraciones por linea*/
+/*Hoja externa: hoja con denominación css ligada a la hoja html*/
+/*Hoja interna: declaraciones CSS que van dentro de la cabeza (head) de la hoja HTML*/
+/*Declaraciones en linea: la declaración va "en linea" con el elemento a estilizar*/
+/* h1 {color:blue; font-size:12px} (selector {property:value; property:value}); property:value --> declaration; se pueden separar varias declaraciones con punto y coma (;)*/
+/*CSS Element Selector: <> (h, p); por elemento >>>> nombreElemento {}; adentro de las llaves van las declaraciones css*/
+
+/*CSS id Selector: attribute of an HTML element to select a specific element*/
+/* #id_of_the_element */
+
+/*CSS class Selector: HTML element with a specific class atribute*/
+/* .class_name */
+
+/* element.class_name = elements with this name class*/
+
+/*  *  : universal selector of HTML elements, selecciona todos los elementos html de una página*/
+
+/*CSS Grouping selector: agrupa elementos HTML que deben llevar el mismo estilo*/
+/* element, element, element {declarations}*/
+/* ejemplo: h1, h2, p {color:red}*/
+
+/*Algunas propiedades CSS
+background-color: => color de fondo
+border: unit solid color => color de borde
+border-style: => estilo de borde
+border-width: => especific size or thin, medium or thick
+color: => color de texto
+height: => altura
+margin: => margen
+padding: => espacio entre el borde y el elemento interior
+width: => ancho
+**los colores pueden declararse con otros valores: 
+rgb (red, green, blue) -> intensity=0-255, rgb(255, 0, 0) red; rgb (0, 0, 255) blue; rgb (0, 255, 0) green; rgb (0, 0, 0) black; rgb (255, 255, 255) white. 
+HEX -> 
+rgba (red, green, blue, alpha) -> rgb + opacity (0.0 fully transparent, 1.0 not transparent)
+HSLA ->*/
+
+/*Box Model: Box => Caja, Una caja que envuelve un o varios elementos
+Propiedades de las cajas:
+Content: contenido de la caja => texto, imágenes
+Padding: relleno; despeja un área alrededor del contenido, es transparente.
+Border: borde que rodea el relleno y el contenido
+Margin: despeja un área fuera del borde. Es transparente*/
+
 body {
-    h1 {
-        color: blueviolet;
-    }
-    h2 {
-        color: aqua;
-    }
-}
-/*2do selector: seleccionar por clase > .nombreDeLaClase {} (para este es necesario crear clases con <div class= "nombreClase">*/
-.titular3 {
-    h2 {
-        color:brown;
+    background-color:mediumorchid;
+    * {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
-.caja {
-    width: 200px; /*ancho de la caja*/
-    height: 100px; /*altura de la caja*/
-    padding: 20px; /*espacio entre el contenido y el borde*/
-    border: 5px solid blue; /*linea que rodea el padding*/
-    margin: 10px; /*espacio entre el borde y otros elementos fuera de la caja*/
-    background-color: lightgray; /*color de fondo de la caja*/
+.header {
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    background-color: aquamarine;
+    .titulo {
+        color: indigo;
+        font-size: x-large;
+    }
+    .caja {
+        width: 150px;
+        height: 10px;
+        padding: 2%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color:darkorchid;
+    }
 }
 
-.caja {
-    display: block; /*display: block > hace visible un elemento */
+.contenedor {
+    width: 50%;
+    background-color:darksalmon;
+    position: relative;
+    left: 25%;
+    right: 25%;
+    top: 15px;
+    bottom: 15px;
+}
+
+.contenedorUno {
+    display:flex;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    top: 15px;
+    bottom: 15px;
+    margin: 10px;
+    flex-flow:row;
+    justify-content: space-evenly;
+    background-color: lightskyblue;
+}
+.contenedorDos {
+    display:flex;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    top: 15px;
+    bottom: 15px;
+    margin: 10px;
+    flex-flow:row;
+    justify-content: space-evenly;
+    background-color: lightskyblue;
 }
 
 .tabla {
-    display: none; /*display: none > hace invisible un elemento*/
-}
-
-.estatica {
-    position: static;
-}
-
-.relativa {
+    display:flex;
+    width: 50%;
     position: relative;
-    top: 20px;
-    left: 20px;
+    left: 25%;
+    right: 25%;
+    top: 15px;
+    bottom: 15px;
+    margin: 10px;
+    background-color: lightcoral;
+    flex-flow:column;
+    justify-content: space-evenly;
+    h3 {
+        text-align: center;
+    }
 }
 
-.absoluta {
-    position: absolute;
-    top: 50px;
-    left: 50px;
+.creditos {
+    display: flex;
+    width: 100%;
+    background-image: url(/Images/koya.png);
+    position: relative;
+    bottom: 0px;
+    justify-content: center;
 }
-
-.fija {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: lightblue;
-}
-
-.pegajosa {
-    position: sticky;
-    top: 0;
-    background-color: yellow; 
-}
-
-/*3er selector: por ID*/
-/*Utilizamos el selector "clase" para clasificar las "cajas"*/
-
