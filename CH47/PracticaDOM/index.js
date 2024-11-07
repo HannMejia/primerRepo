@@ -45,12 +45,35 @@ function js_style(){
 //       </form>
 //     </body>
 // </html>
+
+function getFormValue(event) {
+    event.preventDefault ();
+
+    const firstName = document.getElementsByName('fname')[0].value;
+    const lastName = document.getElementsByName('lname')[0].value;
+
+    console.log (`First Name: ${firstName}`);
+    console.log (`Last Name: ${lastName}`);
+}
+getFormValue();
+
 // Exercise #3
 // Write a function and call it when clicking a button to show an alert with:
 
 // The number of links on the page
 // The first link in the page
 // The last link in the page
+function mostrarAlertas() {
+    const enlaces = document.getElementsByTagName('a');
+    const primerEnlace = enlaces [0];
+    const ultimoEnlace = enlaces [enlaces.length-1];
+
+    alert(`Número de enlaces en la página: ${enlaces.length}`); 
+    alert(`Primer enlace en la página: ${primerEnlace.href}`); 
+    alert(`Último enlace en la página: ${ultimoEnlace.href}`);
+}
+mostrarAlertas();
+
 // Exercise #4
 // <!DOCTYPE html>
 // <html lang="en">
