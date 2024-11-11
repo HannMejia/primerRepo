@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica sencilla con DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+       <div class="card">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="userName">
+                    <input type="text" placeholder="Usuario">
+                </div>
+                <div id="pass">
+                    <input type="password" placeholder="Contraseña">
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <p id="mensaje" class="invalid">La contraseña debe ser de al menos 8 caracteres</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" id="iniciarSesion">Iniciar sesión</button>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
