@@ -35,23 +35,49 @@ myPromise.then((result) => success(result))
         console.log("aqui termina el proceso asincrono");
     },15000);
 }
-
 console.log("antes de la funcion asincrona");
 procesoAsincrono();
 console.log("despues de la funcion asincrona");*/
 
 //{} -> objeto
+
 const url = "https://pokeapi.co/api/v2/pokemon/charmander";
 
 console.log("antes del fetch");
 fetch (url,{
     method: 'GET'
 }).then((response)=>{
-    console.log(response.data.name);
+    return response.json();
+}).then((data)=>{
+    console.log(data);
+    localStorage.setItem("nombrePokemon", data.name);
 }).catch((error)=>{
-    console.error("Ha fallado");
+    console.error(error, "Ha fallado");
 })
 console.log("Despues del fetch");
 
+function peleaPokemon() {
+    const miPrimerPokemon = localStorage.getItem("nombrePokemon");
+    console.log("primerContrincante: " + miPrimerPokemon);
+}
+peleaPokemon();
 
- 
+//ASYNC/AWAIT
+//Funciones dummys o mobs = funciones de prueba
+function dummyFetch() {
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve("datosDummys");
+        }, 10000)
+    })
+}
+//desde el uso de la palabra reservada -- async --, estas declarando que la función es asincrona y, por tanto, retorna una promesa.
+async function funcionAsync() {
+    try { //Uso de try - catch para manejo de errores
+        const data = await dummyFetch(); //Aquí esperamos a que la promesa se resuelva.
+        console.log(data);
+    } catch(err) {
+        console.error ("Error de Dummy" + err);
+    }
+}
+funcionAsync();
