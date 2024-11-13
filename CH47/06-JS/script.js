@@ -46,7 +46,7 @@ console.error ("Ups")
 let participantes = ["Irving", "Abigail", "Arez", "Hannia"];
 console.log (participantes);
 console.table (participantes);*/
-
+/*
 alert ("Bienvenidx al juego del amor! Da click para comenzar:");
 let nombre = prompt ("Ingresa porfa tu nombre: ");
 let amadx = prompt ("Ingresa el nombre de tu amadx: ");
@@ -59,3 +59,6 @@ let informacion = [nombre, amadx, dias, primeraTarjeta, segundaTarjeta];
 alert (informacion);
 
 let nombresDeLxsQueNosRompieronElKora = ["Ana Beatriz", "Uriel", "Daniel", "Alejandros que no son de bootcamp", "Alguien mas"]
+*/
+let x = 6 + 3 + "3";
+console.log(x);
