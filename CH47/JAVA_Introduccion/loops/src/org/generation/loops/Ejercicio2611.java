@@ -11,7 +11,7 @@ public class Ejercicio2611 {
 		System.out.println("¡Hola, bienvenid@, " + nombre + "!");
 		
 		for (int i = 0; i < nombre.length(); i++) { 
-			System.out.println("Letra " + (i + 1) + ": " + nombre.charAt(i)); 
+			System.out.println("Letra: " + nombre.charAt(i)); 
 		} 
 		
 		scanner.close();
